@@ -1,0 +1,107 @@
+/* Variables
+       ============================= */
+    :root {
+        --color-primary: #C271FF;
+        --color-black:  #090909;
+        --color-white: #FFFFFF;
+        --color-dark: purple;
+
+        --font-family-base: "Source Sans Pro";
+
+        --font-size-x-small: 14px;
+        --font-size-small: 16px;
+        --font-size-medium: 18px;
+        --font-size-large: 32px;
+        --font-size-x-large: 46px;
+        --font-size-h1: 7.5rem;
+
+        --font-weight-bold: 600;
+    }
+
+/* 
+    Base
+      ============================ */
+        body {
+            font-family: var(--font-family-base);
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            border: var(--color-primary);
+            border-radius: 1.5rem;
+            font-size: var(--font-size-x-small);
+        }
+
+        .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+            background-color: var(--color-dark);
+            opacity: 0.9
+        }
+
+/* Header / Hero Section
+      ============================= */
+      header {
+          background-image: url(./images/pic_1.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+      }
+
+      .display-1 {
+          font-size: var(--font-size-h1);
+      }
+
+      .profile li a ~ p {
+          font-size: var(--font-size-medium);
+      }
+
+      a.nav-link {
+          font-size: var(--font-size-x-small);
+      }
+
+      .highlight {
+          color: var(--color-primary);
+      }
+
+      .highlight small {
+          color: var(--color-white);
+      }
+
+      .navbar-icon {
+          font-family: holberton_school-icon;
+          font-size: var(--font-size-large);
+      }
+
+
+/* Medium Screens
+      ============================== */
+      @media screen and (max-width: 768px) {
+        .display-1 {
+            font-size: 6rem;
+        }
+        .row {
+            padding-left: 0 !important;
+            padding-right: 0!important;
+        }
+      
+      }
+
+/* Small Screens
+      =============================== */
+      @media screen and (max-width: 576px) {
+        .display-1 {
+            font-size: 3rem;
+        }
+        .row {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+       
+        header {
+            background-image: url(./images/pic_1.jpg);
+            background-repeat: no-repeat;
+            background-position: 31% 0%;
+            background-size: 104rem;
+        }
+      }
