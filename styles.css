@@ -97,14 +97,60 @@
         height: 4rem;   
     }
 
-    .carousel-item img {
-        margin: 0 6rem;
-    }
-
     .item-inner {
         padding-left: 5rem;
     }
 
+
+/* Video Section
+      ============================== */
+     .section-video {
+         font-size: var(--font-size-x-small);
+     }
+
+     .highlight2 small {
+          color: var(--color-primary);
+          padding-top: 5rem;
+      }
+
+      .card-text {
+          max-width: 242px;
+          color: #838a94;
+      }
+
+
+      .profile-video {
+          color: var(--color-primary);
+      }
+
+      .section-video .carousel-control-prev-icon {
+          background-image: url(./images/arrow_black_left.png);
+          margin-left: -4rem !important;
+      }
+
+      .section-video .carousel-control-next-icon {
+          background-image: url(./images/arrow_black_right.png);
+          margin-right: -4rem !important;
+      }
+
+      .section-video .card {
+          max-width: 255px;
+      }
+
+      .section-video .play-icon {
+          margin: 2.8rem 5.5rem;
+      }
+
+/* Section Membership 
+      ============================== */
+      .section-membership {
+          background-color: #071629;
+      }
+
+      .section-membership .list-group-item {
+          max-width: 257px;
+          max-height: 153px;
+      }
 /* Medium Screens
       ============================== */
       @media screen and (max-width: 768px) {
