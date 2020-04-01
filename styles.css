@@ -3,8 +3,9 @@
     :root {
         --color-primary: #C271FF;
         --color-black:  #090909;
-        --color-white: #FFFFFF;
+        --color-white: #ffffff;
         --color-dark: purple;
+        --color-darker:#071629;
 
         --font-family-base: "Source Sans Pro";
 
@@ -113,7 +114,7 @@
           padding-top: 5rem;
       }
 
-      .card-text {
+      .section-video .card-text {
           max-width: 242px;
           color: #838a94;
       }
@@ -144,13 +145,30 @@
 /* Section Membership 
       ============================== */
       .section-membership {
-          background-color: #071629;
+          background-color: var(--color-darker);
       }
 
       .section-membership .list-group-item {
           max-width: 257px;
           max-height: 153px;
       }
+
+/* Footer 
+      =============================== */
+      footer {
+          background-color: var(--color-darker);
+      }
+
+      svg {
+          fill: var(--color-white);
+      }
+
+      .f-smile {
+          color: #838a94;
+          font-size: var(--font-size-x-small);
+      }
+
+
 /* Medium Screens
       ============================== */
       @media screen and (max-width: 768px) {
@@ -204,4 +222,12 @@
             margin-left: 3.5rem;
             margin-right: 2.8rem;
         }
+        .section-video .carousel-control-prev-icon {
+            margin-left: 0 !important;
+        }
+        
+        .section-video .carousel-control-next-icon {
+            margin-right: 0 !important;
+        }
+
       }
