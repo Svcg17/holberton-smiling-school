@@ -8,6 +8,7 @@
         --color-darker:#071629;
 
         --font-family-base: "Source Sans Pro";
+        --font-family-hbtn: "holberton_school-icon";
 
         --font-size-x-small: 14px;
         --font-size-small: 16px;
@@ -16,7 +17,7 @@
         --font-size-x-large: 46px;
         --font-size-h1: 7.5rem;
 
-        --font-weight-bold: 600;
+        --font-weight-bold: 900;
     }
 
 /* 
@@ -36,6 +37,10 @@
         .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
             background-color: var(--color-dark);
             opacity: 0.9
+        }
+
+        .nav-item .nav-link:hover {
+            color: var(--color-primary) !important;
         }
 
 /* Header / Hero Section
@@ -68,9 +73,45 @@
           color: var(--color-white);
       }
 
-      .navbar-icon {
+      .navbar-icon, .font-icon {
           font-family: holberton_school-icon;
           font-size: var(--font-size-large);
+      }
+
+      /* Pricing Header ====================== */
+      .header-pricing {
+          background-image: url(./images/pic_2.jpg);
+      }
+
+      .text-x-sm {
+          color: lightgray;
+          font-size: 12px;
+      }
+      
+      .header-pricing .font-icon {
+          color: #82D24F;
+      }
+
+      .size-xs {
+          font-size: var(--font-size-x-small);
+      }
+
+      .border-bottom {
+          border-bottom: .5px solid #979797 !important;
+      }
+
+      /* Courses Header ====================== */
+      .header-courses {
+          background-image: url(./images/pic_3.jpg);
+      }
+
+      .highlight-3 {
+          font-family: Coiny;
+          max-width: 43rem;
+      }
+
+      .highlight-3 h1 small{
+          color: var(--color-primary);
       }
 
 /* Section Quotes
@@ -81,8 +122,9 @@
 
     .carousel-caption {
         position: unset;
+        max-width: 730px;
         margin-right: 6rem;
-        margin-left: 7rem;
+        margin-left: 3rem;
     }
 
     .carousel-control-prev-icon {
@@ -152,6 +194,39 @@
           max-width: 257px;
           max-height: 153px;
       }
+
+/* FAQ Section
+      =============================== */
+      .faq {
+          max-width: 350px;
+      }
+
+      .section-faq p {
+          color: gray !important;
+      } 
+
+
+/* Filters Section
+      ================================ */
+      .section-filter {
+        background-color: var(--color-primary);
+      }
+
+     .section-filter input, .bg-span {
+        background-color: #d195ff;
+        border-color: white !important;
+     } 
+
+    .font-icon-filter {
+        font-family: var(--font-family-hbtn);
+    } 
+     .input-title {
+        font-size: var(--font-size-x-small);
+     }
+
+     .form-control::placeholder {
+        color: white;
+     }
 
 /* Footer 
       =============================== */
@@ -228,6 +303,10 @@
         
         .section-video .carousel-control-next-icon {
             margin-right: 0 !important;
+        }
+        
+        .faq {
+          max-width: unset;
         }
 
       }
