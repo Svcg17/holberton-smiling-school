@@ -12,7 +12,7 @@ Implementation of a website designed by Nicolas Philippot, UI/UX designer.
 
 ## Product
 These are how the website looks like:
-[website](./images/readme.jpg)
+![website](./images/readme.jpg)
 
 ---
 ## Author
